@@ -15,6 +15,6 @@ Rails.application.routes.draw do
 
   root 'static_pages#index'
 
-  # Redirect all other paths to index page, which will be taken over by AngularJS
-  get '*path'    => 'static_pages#index'
+  # Redirect all other paths to index page
+  get '*path'                         => 'static_pages#index'
 end
